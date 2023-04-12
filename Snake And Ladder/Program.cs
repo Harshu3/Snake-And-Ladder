@@ -25,12 +25,12 @@ namespace Snake_And_Ladder
                         Console.WriteLine("The Player is on initial position = " + Player_position);
                         break;
                     case 1:
-                        Console.WriteLine("Ladder");
+                        Console.WriteLine("Got Ladder");
                         Player_position = Player_position + Die_num;
                         Console.WriteLine("The Position is added = " + Player_position);
                         break;
                     case 2:
-                        Console.WriteLine("Snake");
+                        Console.WriteLine("Got Snake");
                         Player_position = Player_position - Die_num;
                         Console.WriteLine("The Position is subtracted = " + Player_position);
                         break;
@@ -39,7 +39,7 @@ namespace Snake_And_Ladder
                 if (Player_position < 0)
                 {
                     Player_position = 0;
-                    Console.WriteLine("Player is back to initial = " + Player_position);
+                    Console.WriteLine("Player is back to initial position = " + Player_position);
                 }
                 else if (Player_position > 100)
                 {
