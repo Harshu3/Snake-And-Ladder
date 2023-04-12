@@ -20,17 +20,17 @@ namespace Snake_And_Ladder
             {
                 case 0:
                     Console.WriteLine("No Play");
-                    Console.WriteLine("The Position is " + Player_position);
+                    Console.WriteLine("The Player is on initial position = " + Player_position);
                     break;
                 case 1:
-                    Console.WriteLine("Ladder");
+                    Console.WriteLine("Got Ladder");
                     Player_position = Player_position + Die_num;
-                    Console.WriteLine("The Position is " + Player_position);
+                    Console.WriteLine("The Position is added = " + Player_position);
                     break;
                 case 2:
-                    Console.WriteLine("Snake");
+                    Console.WriteLine("Got Snake");
                     Player_position = Player_position - Die_num;
-                    Console.WriteLine("The Position is " + Player_position);
+                    Console.WriteLine("The Position is subtracted = " + Player_position);
                     break;
             }
 
