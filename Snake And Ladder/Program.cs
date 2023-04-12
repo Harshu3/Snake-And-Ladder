@@ -15,6 +15,25 @@ namespace Snake_And_Ladder
             Console.WriteLine(" Number after rolling a die:");
             Console.WriteLine($" {Die_num}");
 
+            int option = random.Next(3);
+            switch (option)
+            {
+                case 0:
+                    Console.WriteLine("No Play");
+                    Console.WriteLine("The Position is " + Player_position);
+                    break;
+                case 1:
+                    Console.WriteLine("Ladder");
+                    Player_position = Player_position + Die_num;
+                    Console.WriteLine("The Position is " + Player_position);
+                    break;
+                case 2:
+                    Console.WriteLine("Snake");
+                    Player_position = Player_position - Die_num;
+                    Console.WriteLine("The Position is " + Player_position);
+                    break;
+            }
+
 
         }
     }
