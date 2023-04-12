@@ -41,12 +41,7 @@ namespace Snake_And_Ladder
                 if (Player_position < 0)
                 {
                     Player_position = 0;
-<<<<<<< HEAD
-
-                    Console.WriteLine("Player is back to initial = " + Player_position);
-=======
                     Console.WriteLine("Player is back to initial position = " + Player_position);
->>>>>>> UC5-EnsureExactWinPosition
                 }
                 else if (Player_position > 100)
                 {
